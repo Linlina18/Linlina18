@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #0A1172, #0492C2, #1338BE, #82EEFD);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.7); 
+      backdrop-filter: blur(8px);
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+      position: relative;
+      max-width: 400px;
+      width: 100%;
+    }
+
+     .profile-picture {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      background-image: url(PNG.jpg);
+      background-size: cover;
+      border: 4px solid #000080;
+      box-shadow: 0 0 3px rgba(0, 0, 128, 0.5);
+
+    }
+
+    .heading {
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 10px;
+      color: #0492C2;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .subheading {
+      font-size: 16px;
+      font-family: palatino;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #0492C2;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #0492C2;
+    }
+
+    .form-group input {
+      width: 95%;
+      padding: 10px;
+      border: 1px solid #02066F;
+      border-radius: 4px;
+    }
+
+    .login-button {
+      width: 100%;
+      margin-top: 20px;
+      display: block;
+      padding: 12px;
+      background: #0492C2;
+      border: 2px solid #000080;
+      border-radius: 30px;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .remember-me {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .remember-me input[type="checkbox"] {
+      margin-right: 8px;
+    }
+
+    .forgot-password {
+      text-align: right;
+      font-size: 14px;
+      color: #0492C2;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="form-box">
+      <h1 class="heading" title="WELCOME TO THE ICT WORLD">WELCOME TO THE ICT WORLD</h1>
+      <p class="subheading">Please log in and discover a great amount of new opportunities!</p>
+      <div class="profile-picture"></div>
+    </div>
+    <form action="thankyou.html">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      </div>
+      <div class="remember-me">
+        <input type="checkbox" id="remember-me" name="remember-me">
+        <label for="remember-me">Remember me</label>
+      </div>
+      <div class="forgot-password">
+        <a href="#">Forgot password?</a>
+      </div>
+      <button class="login-button" type="submit">Log In</button>
+    </form>
+  </div>
+</body>
+</html>
